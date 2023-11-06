@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/ee-jquery.js"></script>
+    <script src="https://kit.fontawesome.com/f4964babb2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/ee.css">
+    <title>Experiment</title>
+</head>
+
+<body>
+    <div id="passwordSection" class="fixed container">
+        <form id="passwordForm">
+            <div class="normalText">Please enter the password you were given to enter the study</div>
+            <input class="textInput" type="text"></input>
+            <div>
+                <button id="passwordContinueButton" class="button background-blue font-dark">Continue</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="welcomeSection">
+
+        <div class="normalText">Hello and welcome to the study</div>
+        <div class="fixed container">
+            <div class="ee-video">
+                <iframe id="welcomeVideo" width="420" height="315">
+                </iframe>
+            </div>
+        </div>
+        <div class="flex container">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+        </div>
+        <form id="welcomeForm">
+            <div class="fixed container">
+                <input type="checkbox" id="over18" name="over18" value="Over18">
+                <label for="over18">I confirm that I am over 18</label><br>
+                <input type="checkbox" id="readInfo" name="readInfo" value="ReadInfo">
+                <label for="readInfo">I confirm that I have read the information sheet</label><br>
+                <input type="checkbox" id="consent" name="consent" value="Consent">
+                <label for="consent">I consent to taking part in this study</label><br>
+            </div>
+            <div>
+                <button id="welcomeContinueButton" class="button background-blue font-dark">Continue</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="stageOneSection">
+        <div class="normalText">Stage One</div>
+        <div class="normalText">Please set the volume at a comfortable level and don't change it throughout the study
+        </div>
+        <div class="fixed container">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+        </div>
+        <form id="stageOneForm">
+            <div>
+                <button id="stageOneContinueButton" class="button background-blue font-dark">Continue</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="stageTwoSection">
+        <div class="normalText">Stage Two</div>
+        <div class="fixed container">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+        </div>
+        <form id="stageTwoForm">
+            <div>
+                <button id="stageTwoContinueButton" class="button background-blue font-dark">Continue</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="timedQuestionaireSection">
+        <div class="fixed container">
+            <div class="normalText">Insert Questionaire</div>
+        </div>
+        <form id="timedQuestionaireForm">
+            <div>
+                <button id="timedQuestionaireContinueButton" class="button background-blue font-dark">Continue</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="untimedQuestionaireSection">
+        <div class="fixed container">
+            <div class="normalText">Insert Untimed Questionaire</div>
+        </div>
+        <form id="untimedQuestionaireForm">
+            <div>
+                <button id="untimedQuestionaireContinueButton"
+                    class="button background-blue font-dark">Continue</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="thankYouSection">
+        <div class="fixed container">
+            <div class="normalText">Thanks for completing + debrief information</div>
+        </div>
+    </div>
+</body>
+
+</html>
