@@ -4,33 +4,36 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <script src="js/jquery-3.6.3.js"></script>
-    <script src="js/ee-jquery.js"></script>
+    <script src="jquery-3.6.3.js"></script>
+    <script src="ee.js"></script>
     <script src="https://kit.fontawesome.com/f4964babb2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/ee.css">
+    <link rel="stylesheet" href="ee.css">
     <title>Experiment</title>
 </head>
 
 <body>
-    <div id="passwordSection" class="fixed container">
+    <div id="headerSection" class="fixed container">
+        <div id="header"></div>
+    </div>
+
+    <div id="playerSection" class="fixed borderless container">
+        <div id="player" class="ee-video">
+            <iframe id="welcomeVideo" width="80%" height="315">
+            </iframe>
+        </div>
+    </div>
+
+    <div id="passwordSection" class="fixed container" hidden>
         <form id="passwordForm">
-            <div class="normalText">Please enter the password you were given to enter the study</div>
-            <input class="textInput" type="text"></input>
+            <input id="password" class="textInput" type="text"></input>
             <div>
-                <button id="passwordContinueButton" class="button background-blue font-dark">Continue</button>
+                <button id="passwordContinueButton" class="button background-blue font-dark" disabled>Continue</button>
             </div>
         </form>
     </div>
 
-    <div id="welcomeSection">
+    <div id="welcomeSection" hidden>
 
-        <div class="normalText">Hello and welcome to the study</div>
-        <div class="fixed container">
-            <div class="ee-video">
-                <iframe id="welcomeVideo" width="420" height="315">
-                </iframe>
-            </div>
-        </div>
         <div class="flex container">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -50,65 +53,65 @@
                 <label for="readInfo">I confirm that I have read the information sheet</label><br>
                 <input type="checkbox" id="consent" name="consent" value="Consent">
                 <label for="consent">I consent to taking part in this study</label><br>
+                <button id="welcomeContinueButton" class="button background-blue font-dark" disabled>Continue</button>
             </div>
-            <div>
-                <button id="welcomeContinueButton" class="button background-blue font-dark">Continue</button>
-            </div>
-        </form>
+    </div>
+    </form>
     </div>
 
-    <div id="stageOneSection">
-        <div class="normalText">Stage One</div>
-        <div class="normalText">Please set the volume at a comfortable level and don't change it throughout the study
-        </div>
+    <div id="stageOneSection" hidden>
         <div class="fixed container">
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
+            <form id="stageOneForm">
+                <div>
+                    <button id="stageOneStartButton" class="button background-blue font-dark">Start</button>
+                    <button id="stageOneContinueButton" class="button background-blue font-dark"
+                        disabled>Continue</button>
+                </div>
+            </form>
         </div>
-        <form id="stageOneForm">
-            <div>
-                <button id="stageOneContinueButton" class="button background-blue font-dark">Continue</button>
-            </div>
-        </form>
     </div>
 
-    <div id="stageTwoSection">
-        <div class="normalText">Stage Two</div>
+    <div id="stageTwoSection" hidden>
         <div class="fixed container">
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
+            <form id="stageTwoForm">
+                <div>
+                    <button id="stageTwoStartButton" class="button background-blue font-dark">Start</button>
+                    <button id="stageTwoContinueButton" class="button background-blue font-dark"
+                        disabled>Continue</button>
+                </div>
+            </form>
         </div>
-        <form id="stageTwoForm">
-            <div>
-                <button id="stageTwoContinueButton" class="button background-blue font-dark">Continue</button>
-            </div>
-        </form>
     </div>
 
-    <div id="timedQuestionaireSection">
+    <div id="timedQuestionaireSection" hidden>
         <div class="fixed container">
             <div class="normalText">Insert Questionaire</div>
         </div>
-        <form id="timedQuestionaireForm">
-            <div>
-                <button id="timedQuestionaireContinueButton" class="button background-blue font-dark">Continue</button>
-            </div>
-        </form>
+        <div class="fixed container">
+            <form id="timedQuestionaireForm">
+                <div>
+                    <button id="timedQuestionaireContinueButton"
+                        class="button background-blue font-dark">Continue</button>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <div id="untimedQuestionaireSection">
+    <div id="untimedQuestionaireSection" hidden>
         <div class="fixed container">
             <div class="normalText">Insert Untimed Questionaire</div>
         </div>
-        <form id="untimedQuestionaireForm">
-            <div>
-                <button id="untimedQuestionaireContinueButton"
-                    class="button background-blue font-dark">Continue</button>
-            </div>
-        </form>
+        <div class="fixed container">
+            <form id="untimedQuestionaireForm">
+                <div>
+                    <button id="untimedQuestionaireContinueButton"
+                        class="button background-blue font-dark">Continue</button>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <div id="thankYouSection">
+    <div id="thankYouSection" hidden>
         <div class="fixed container">
             <div class="normalText">Thanks for completing + debrief information</div>
         </div>

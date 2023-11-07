@@ -13,8 +13,7 @@
 h1 {
   font-size: 5rem;
   font-weight: bold;
-  margin-top: 2%;
-  margin-bottom: 1%;
+  margin: 10px auto;
 }
 
 h2 {
@@ -53,10 +52,14 @@ h4 {
 }
 
 .container {
+  margin: 10px auto;
+  width: 75%;
   padding: 2%;
-  margin: 1% 2%;
   border: 2px solid rgb(173, 173, 180); 
-  display: inline-block; 
+}
+
+.borderless {
+  border-width: 0; 
 }
 
 .fixed {
@@ -154,7 +157,7 @@ h4 {
 .button {
   text-decoration: none;
   text-align: center;
-  margin: 2%;
+  margin-top: 3%;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 3%;
@@ -166,14 +169,20 @@ h4 {
   background-color: #2dc2bd;
 }
 
-.button:hover, .button:focus {
+.button:hover:enabled, .button:focus:enabled {
   color:white;
   background-color: #DC1E79;
   transition: 0.7s;
 }
 
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .textInput {
-  margin-left: 3%;
   margin-top: 3%;
   width: 45%;
   font-size: 2rem;
