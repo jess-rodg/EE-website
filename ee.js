@@ -29,8 +29,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
-    height: "390",
-    width: "640",
     playerVars: {
       playsinline: 1,
       autoplay: 0,
@@ -70,9 +68,8 @@ function onPlayerStateChange(event) {
 }
 
 $(function () {
-
   setupPasswordPage();
-  
+
   /**
    * Password Page
    */
@@ -217,7 +214,7 @@ $(function () {
     $("#untimedQuestionaireSection").hide();
     setupThankYouPage();
   });
-  
+
   function setupUntimedQuestionairePage() {
     $("#header").text("Untimed Questionaire");
     $("#untimedQuestionaireContinueButton").prop("disabled", false);
@@ -255,7 +252,6 @@ $(function () {
     return false;
   });
   $("#untimedQuestionaireForm").on("submit", function (e) {
-    return false;    
+    return false;
   });
-
 });

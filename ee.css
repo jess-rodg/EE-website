@@ -58,6 +58,11 @@ h4 {
   border: 2px solid rgb(173, 173, 180); 
 }
 
+.player {
+  margin: auto;
+  width: 100%;  
+}
+
 .borderless {
   border-width: 0; 
 }
