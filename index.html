@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="shortcut icon" href="#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,51 +12,62 @@
 </head>
 
 <body>
-    <div id="headerSection" class="fixed container">
-        <div id="header"></div>
+    <div class="mobile-display">
+        Please use a laptop or desktop device.
     </div>
-
-    <div id="playerSection" class="fixed borderless container">
-        <div id="player" class="player">
-            <iframe id="player">
-            </iframe>
+    <div class="desktop-display">
+        <div id="headerSection" class="fixed container">
+            <div id="header"></div>
         </div>
-    </div>
 
-    <div id="passwordSection" class="fixed container" hidden>
-        <form id="passwordForm">
-            <input id="password" class="textInput" type="text"></input>
-            <div>
-                <button id="passwordContinueButton" class="button background-blue font-dark" disabled>Continue</button>
+        <div id="playerSection" class="fixed borderless container">
+            <div id="player" class="player">
+                <iframe id="player">
+                </iframe>
             </div>
+        </div>
+
+        <div id="passwordSection" class="fixed container" hidden>
+            <form id="passwordForm">
+                <input id="password" class="textInput" type="text"></input>
+                <div>
+                    <button id="passwordContinueButton" class="button background-blue font-dark"
+                        disabled>Continue</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="welcomeSection" hidden>
+
+            <div class="flex container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa
+                qui officia deserunt mollit anim id est laborum.
+            </div>
+            <form id="welcomeForm">
+                <div class="fixed container">
+                    <input type="checkbox" id="over18" name="over18" value="Over18">
+                    <label for="over18">I confirm that I am over 18</label><br>
+                    <input type="checkbox" id="readInfo" name="readInfo" value="ReadInfo">
+                    <label for="readInfo">I confirm that I have read the information sheet</label><br>
+                    <input type="checkbox" id="consent" name="consent" value="Consent">
+                    <label for="consent">I consent to taking part in this study</label><br>
+                    <button id="welcomeContinueButton" class="button background-blue font-dark"
+                        disabled>Continue</button>
+                </div>
+        </div>
         </form>
-    </div>
-
-    <div id="welcomeSection" hidden>
-
-        <div class="flex container">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.
-        </div>
-        <form id="welcomeForm">
-            <div class="fixed container">
-                <input type="checkbox" id="over18" name="over18" value="Over18">
-                <label for="over18">I confirm that I am over 18</label><br>
-                <input type="checkbox" id="readInfo" name="readInfo" value="ReadInfo">
-                <label for="readInfo">I confirm that I have read the information sheet</label><br>
-                <input type="checkbox" id="consent" name="consent" value="Consent">
-                <label for="consent">I consent to taking part in this study</label><br>
-                <button id="welcomeContinueButton" class="button background-blue font-dark" disabled>Continue</button>
-            </div>
-    </div>
-    </form>
     </div>
 
     <div id="stageOneSection" hidden>
@@ -116,6 +126,7 @@
         <div class="fixed container">
             <div class="normalText">Thanks for completing + debrief information</div>
         </div>
+    </div>
     </div>
 </body>
 
